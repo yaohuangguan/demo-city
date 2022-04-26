@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import { Link } from "@reach/router";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="demo-item">
+        <h3>🔥Big Data Performance Enhancement</h3>
+        <Link to="/virtual-list-scroll">
+          100k items of data: Virtual List implemented by onScroll
+        </Link>
+      </div>
+
+      <div className="demo-item">
+        <h3>🚀I/O savings, debounce, throttle</h3>
+        <Link to="/debounce-thorttle">
+          What is Regular, Debounce, Throttle?
+        </Link>
+      </div>
     </div>
   );
 }

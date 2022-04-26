@@ -1,0 +1,13 @@
+.io-saving {
+  display: flex;
+}
+
+.io-mouse-pad {
+  height: 600px;
+  width: 130px;
+  background: rgb(224, 219, 219);
+  border: 1px dotted #fff;
+  color: rgb(73, 71, 71);
+  text-align: center;
+  font-size: 12px;
+}
