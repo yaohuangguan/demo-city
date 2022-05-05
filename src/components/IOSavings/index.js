@@ -2,6 +2,7 @@ import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { getTimeDiff } from "../../utils/timeDiff";
 import "./style.css";
 
+
 const paintColors = ["#72c7f5", "#1fc13a", "#df4401"];
 const totalLanes = paintColors.length;
 const canvasWaitoutFlushTime = 5 * 1000;
@@ -86,13 +87,14 @@ const IOsavings = () => {
   };
 
   return (
-    <div className="io-saving">
-      <div className="io-mouse-pad" onMouseMove={handleMouseMove}>
-        Move your mouse over here
-      </div>
-
-      <canvas width="600" height="600" id="canvas"></canvas>
-    </div>
+    <>
+        <div className="io-saving">
+          <div className="io-mouse-pad" onMouseMove={handleMouseMove}>
+            Move your mouse over here
+          </div>
+          <canvas width="600" height="600" id="canvas"></canvas>
+        </div>
+    </>
   );
 };
 

@@ -2,13 +2,13 @@ import React, { useRef, useState, useEffect } from "react";
 import "./style.css";
 import data from "../../bigData";
 
+
 const itemHeight = 30;
 
 export const VirtualListScroll = () => {
   const virtualRef = useRef(null);
   const virtualContentRef = useRef(null);
   const [visibleData, setVisibleData] = useState([]);
-
   useEffect(() => {
     onHandleScroll();
   }, []);
@@ -33,7 +33,7 @@ export const VirtualListScroll = () => {
   };
 
   return (
-    <div>
+    <>
       <div className="list-view" ref={virtualRef} onScroll={onHandleScroll}>
         <div
           className="list-view-phantom"
@@ -55,6 +55,6 @@ export const VirtualListScroll = () => {
       <span>visible data count: 8</span>
       <br />
       <span>visible data item height: {itemHeight}</span>
-    </div>
+    </>
   );
 };
